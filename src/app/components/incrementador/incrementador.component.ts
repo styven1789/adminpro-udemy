@@ -48,6 +48,8 @@ export class IncrementadorComponent implements OnInit {
 
     this.porcentaje = this.porcentaje + valor;
 
+    this.cambioValor.emit(this.porcentaje);
+
   }
 
 }

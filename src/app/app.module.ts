@@ -7,10 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 // Modulos
 import { PagesModule } from './pages/pages.module';
 
+// Servicios
+import { ServiceModule } from './services/service.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.com
   imports: [
     BrowserModule,
     PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
